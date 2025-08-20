@@ -1,4 +1,57 @@
 body {
     text-align: center;
     font-family: sans-serif;
+    color: cornsilk;
+    background-color: #000;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #8af;
+    text-shadow: #20256e 0 3px 0;
+}
+
+
+canvas {
+    display: none;
+}
+.portfolio {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #fff;
+}
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.project {
+    background: #000008;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px #fff;
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
+}
+.project.appear {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+@media (min-width: 700px) {
+    .projects {
+        flex-direction: row;
+    }
+    .project {
+        flex: 1;
+    }
 }
