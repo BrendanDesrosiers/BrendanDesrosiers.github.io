@@ -17,13 +17,14 @@ h1 {
 canvas {
     display: none;
 }
+
 .portfolio {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 1rem;
-    background: #000000;
+    padding: 2rem;
+    bottom: 2rem;
+    scrollbar-gutter: stable;
     border-radius: 10px;
-    box-shadow: 0 0 4px #fff;
 }
 .portfolio h2 {
     text-align: center;
@@ -39,14 +40,9 @@ canvas {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 0 10px #fff;
-    opacity: 0;
     transform: translateY(40px) scale(0.98);
-    transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
 }
-.project.appear {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-}
+
 @media (min-width: 700px) {
     .projects {
         flex-direction: row;
