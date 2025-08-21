@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: sans-serif;
-    color: cornsilk;
+    color: #cee2ea;
     background-color: #000;
 }
 
@@ -36,7 +36,7 @@ canvas {
     gap: 2rem;
 }
 .project {
-    background: #000008;
+    background: #090915;
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 0 10px #fff;
@@ -50,4 +50,15 @@ canvas {
     .project {
         flex: 1;
     }
+}
+
+.emoji-image {
+    font-size: 2px;
+    width: 100%;
+}
+
+a {
+    color: #8af;
+    text-decoration: none;
+    font-weight: bold;
 }
