@@ -19,7 +19,7 @@ canvas {
 }
 
 .portfolio {
-    max-width: 800px;
+    max-width: 80%;
     margin: 2rem auto;
     padding: 2rem;
     bottom: 2rem;
@@ -34,16 +34,16 @@ canvas {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
 }
 .project {
     background: #090915;
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 0 10px #fff;
-    transform: translateY(40px) scale(0.98);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .projects {
         flex-direction: row;
     }
