@@ -63,10 +63,15 @@ figcaption {
 }
 
 .project-content {
-    display: grid;
-    gap: 2rem;
-    margin-top: 3rem;
-    line-height: 1.7;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  line-height: 1.7;
+}
+
+.project-content > * {
+  min-width: 0;
 }
 
 .project-content h2 {
