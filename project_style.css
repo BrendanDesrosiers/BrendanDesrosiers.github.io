@@ -1,0 +1,130 @@
+.project-page {
+    width: min(100% - 2rem, 900px);
+    margin: 0 auto;
+    padding: 2rem 0 5rem;
+}
+
+.project-nav {
+    margin-bottom: 3rem;
+}
+
+.back-link {
+    color: #78b7ff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.project-header {
+    margin-bottom: 2rem;
+}
+
+.project-summary {
+    max-width: 700px;
+    color: #aab5c5;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.project-hero,
+.project-figure {
+    margin: 2rem 0;
+}
+
+.project-hero img,
+.project-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #293345;
+    border-radius: 0.9rem;
+    background: #171e29;
+}
+
+figcaption {
+    margin-top: 0.65rem;
+    color: #aab5c5;
+    font-size: 0.9rem;
+}
+
+.project-content {
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem;
+    line-height: 1.7;
+}
+
+.project-content h2 {
+    margin-bottom: 0.5rem;
+}
+
+.project-content p,
+.project-content li {
+    color: #c3ccda;
+}
+
+.project-content ul {
+    padding-left: 1.25rem;
+}
+
+.project-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #293345;
+}
+
+.project-carousel {
+  margin: 2rem 0;
+}
+
+.carousel-image {
+  display: block;
+  width: 100%;
+  max-height: 65vh;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  border: 1px solid #293345;
+  border-radius: 0.9rem;
+  background: #171e29;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.carousel-button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border: 1px solid #293345;
+  border-radius: 0.5rem;
+  background: #171e29;
+  color: #78b7ff;
+  font: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  border-color: #78b7ff;
+}
+
+.carousel-button:focus-visible {
+  outline: 3px solid #78b7ff;
+  outline-offset: 3px;
+}
+
+.carousel-status,
+.carousel-caption {
+  color: #aab5c5;
+  text-align: center;
+}
+
+.carousel-caption {
+  margin: 0.65rem 0 0;
+}
