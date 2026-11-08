@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta
     name="description"
-    content="Project details for ##### by Brendan Desrosiers."
+    content="An engineering design project creating a device to help musicians practice tempo and rhythm."
   >
-  <title>##### | Brendan Desrosiers</title>
+  <title>Rhythm Training Device | Brendan Desrosiers</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../project_style.css">
+  <script>
+    const images = [
+      { src: "cadv1.png", caption: "CAD Prototype V1" },
+      { src: "cadv3.png", caption: "CAD Prototype V3" },
+      { src: "v1.png", caption: "Printed Prototype V1" },
+      { src: "v2.png", caption: "Printed Prototype V2" },
+      { src: "EDD_CAD.png", caption: "Final CAD Assembly Exploded View" },
+      { src: "final_assembly_01.png", caption: "Final Assembly Before Screen Installed" },
+      { src: "final_assembly_02.png", caption: "Final Assembly" }
+      ];
+  </script>
+  <script defer src="../carousel.js"></script>
 </head>
 <body>
   <main class="project-page">
@@ -17,52 +29,82 @@
       <a class="back-link" href="../index.html">← Back to portfolio</a>
     </nav>
 
-    <header class="project-header">
-      <p class="eyebrow">Engineering Project</p>
-      <h1>#####</h1>
+    <header class="project-header project-info">
+      <p class="eyebrow">Engineering Design Project</p>
+      <h1>Rhythm Training Device</h1>
       <p class="project-summary">
-        Replace this with a short introduction to the project: what it does,
-        what I built, and why I made it.
+        A practice device that presents a rhythm, records a musician's performance,
+        and scores how closely they matched it. The goal is to help musicians
+        develop their sense of tempo without relying on a metronome.
       </p>
+
+      <dl class="project-details">
+        <div>
+          <dt>Purpose</dt>
+          <dd>Practice tempo and rhythm</dd>
+        </div>
+        <div>
+          <dt>Software</dt>
+          <dd>Onshape, VS Code</dd>
+        </div>
+        <div>
+          <dt>Materials</dt>
+          <dd>ABS Platic, Raspberry Pi 5</dd>
+        </div>
+        <div>
+          <dt>Fabrication</dt>
+          <dd>3D Printing, Soldering</dd>
+        </div>
+      </dl>
     </header>
 
     <figure class="project-hero">
       <img
-        src="images/project-overview.png"
-        alt="Overview of #####"
+        src="final_assembly_02.png"
       >
-      <figcaption>Replace with a brief caption or image credit.</figcaption>
+      <figcaption>Final device</figcaption>
     </figure>
 
     <div class="project-content">
       <section aria-labelledby="overview-heading">
         <h2 id="overview-heading">Overview</h2>
         <p>
-          Describe the project, its purpose, and the problem it addresses.
-          Include enough context for someone unfamiliar with it.
+          My senior design project in high school.
         </p>
       </section>
 
       <section aria-labelledby="process-heading">
         <h2 id="process-heading">Process</h2>
-        <p>
-          Explain your approach, the tools or methods you used, and any
-          notable design decisions.
-        </p>
+        <p>Me and my team began by searching for a specific problem to address. As musicians, we determined that people often rely on external sources of rhythm while playing, which can lead to disagreement within the music.</p>
+        <p>We created a portable device that could be taken with a musician into a practice room. The device takes in a MIDI input (like a keyboard or drum pad) and displays a psedo-randomly generated rhythm (as sheet music) for the user to play. The device counts the user in and records their playing. It then evaluates how they preformed and displays an error graph over time. This can be used to identify and improve specific types of rhythms.</p>
+        <a href="https://github.com/BrendanDesrosiers/EDD-Project" target="blank">Link to repository →</a>
       </section>
 
-      <figure class="project-figure">
-        <img
-          src="images/project-detail.png"
-          alt="Detailed view of the project"
-        >
-        <figcaption>Add another image, diagram, or project detail.</figcaption>
-      </figure>
+      <section class="project-carousel" aria-label="Project images">
+        <div class="carousel-stage">
+          <img class="carousel-preview carousel-preview-previous" alt="" aria-hidden="true">
+          <img class="carousel-preview carousel-preview-next" alt="" aria-hidden="true">
+          <img
+            class="carousel-image"
+            src=""
+          >
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-button" type="button" aria-label="Previous image">←</button>
+          <span class="carousel-status" aria-live="polite"></span>
+          <button class="carousel-button" type="button" aria-label="Next image">→</button>
+        </div>
+        <p class="carousel-caption" aria-live="polite"></p>
+      </section>
 
       <section aria-labelledby="results-heading">
         <h2 id="results-heading">Attributions</h2>
         <ul>
-          <li>Credit to so and so <a href="#" target="blank">link to something cool →</a></li>
+          <li>"<a href="https://doi.org/10.1523/jneurosci.17-14-05528.1997" target="blank">Distributed neural systems underlying the timing of movements. →</a>"</li>
+        </ul>
+         <ul>
+          <li>"<a href="https://ccrma.stanford.edu/~jingjiez/251/fp/pdfs/MUS251-FINAL-Jingjie_Zhang.pdf" target="blank">How Well Can You Persist A Tempo? →</a>"</li>
         </ul>
       </section>
     </div>
