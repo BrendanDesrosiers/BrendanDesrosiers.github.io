@@ -17,6 +17,10 @@
     text-decoration: underline;
 }
 
+.blue-glow {
+  font-weight: bold;
+}
+
 .project-header {
     margin-bottom: 2rem;
 }
@@ -36,7 +40,16 @@
 .project-hero img,
 .project-figure img {
     display: block;
-    width: 100%;
+    width: 50%;
+    height: auto;
+    border: 1px solid #293345;
+    border-radius: 0.9rem;
+    background: #171e29;
+}
+
+img {
+    display: block;
+    width: 50%;
     height: auto;
     border: 1px solid #293345;
     border-radius: 0.9rem;
@@ -79,15 +92,49 @@ figcaption {
   margin: 2rem 0;
 }
 
-.carousel-image {
-  display: block;
+.carousel-stage {
+  position: relative;
   width: 100%;
-  max-height: 65vh;
   aspect-ratio: 16 / 10;
+  max-height: 65vh;
+  overflow: hidden;
+}
+
+.carousel-image,
+.carousel-preview {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  height: auto;
+  max-width: 78%;
+  max-height: 90%;
   object-fit: contain;
+  box-sizing: border-box;
   border: 1px solid #293345;
   border-radius: 0.9rem;
   background: #171e29;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-image {
+  z-index: 1;
+  left: 50%;
+}
+
+.carousel-preview {
+  max-width: 62%;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.carousel-preview-previous {
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(-8deg) scale(0.9);
+}
+
+.carousel-preview-next {
+  left: 90%;
+  transform: translate(-50%, -50%) rotate(8deg) scale(0.9);
 }
 
 .carousel-controls {

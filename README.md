@@ -49,3 +49,6 @@ This page can be accessed [here](https://brendandesrosiers.github.io/)
 ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ <br>
 
 *if you're stumpped, this is supposed to be the git octocat*
+
+<h1>For style reference:</h1>
+- Add a '→' after links so it's clear it leads to a new page

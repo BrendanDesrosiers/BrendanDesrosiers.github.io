@@ -12,13 +12,12 @@
   <link rel="stylesheet" href="../project_style.css">
   <script>
     const images = [
-      { src: "assembly.jpeg", alt: "Assembled Moon Craters model", caption: "Final assembly" },
-      { src: "build.jpeg", alt: "Moon Craters project during construction", caption: "Building the model" },
       { src: "cropped.png", alt: "Cropped lunar topographic data", caption: "Cropped lunar data" },
+      { src: "layers_filled.svg", alt: "Diagram of the filled project layers", caption: "Layer layout" },
       { src: "laer_cutter_01.jpeg", alt: "Moon Craters layers being laser cut", caption: "Laser cutting" },
       { src: "laser_cutter_02.jpeg", alt: "Another view of the laser cutter", caption: "Laser cutting process" },
-      { src: "layers_filled.svg", alt: "Diagram of the filled project layers", caption: "Layer layout" }
-    ];
+      { src: "assembly.jpeg", alt: "Moon Craters project during construction", caption: "Building the model" }
+      ];
   </script>
   <script defer src="../carousel.js"></script>
 </head>
@@ -38,7 +37,7 @@
 
     <figure class="project-hero">
       <img
-        src="Moon Craters/build.jpeg"
+        src="build.jpeg"
         alt="Overview of the Moon Craters project"
       >
       <figcaption>Final assembly</figcaption>
@@ -48,9 +47,17 @@
       <section aria-labelledby="overview-heading">
         <h2 id="overview-heading">Overview</h2>
         <p>
-          This is a topographic map of the Orientale Impact Crater sliced out of baltic birch wood. 
+          This is a topographic map of the Orientale Impact Crater sliced out of baltic birch wood. This crater is special as one of the most prominent multi-ring structures on the moon. I chose it as it seemed like it would make for a nice topographic map.
         </p>
       </section>
+
+      <figure class="project-hero">
+        <img
+          src="orientale impact crater.jpg"
+          alt="Overview of the Moon Craters project"
+        >
+        <figcaption>The Orientale Impact Crater (also known as the Mare Orientale, Latin for the Eastern Sea)</figcaption>
+      </figure>
 
       <section aria-labelledby="process-heading">
         <h2 id="process-heading">Process</h2>
@@ -59,23 +66,24 @@
         </p>
       </section>
 
-        <section class="project-carousel" aria-label="Project images">
-            <img
-                class="carousel-image"
-                src="build.jpeg"
-                alt="Completed Moon Craters assembly"
-            >
-            <div class="carousel-controls">
-                <button class="carousel-button" type="button" aria-label="Previous image">
-                ←
-                </button>
-                <span class="carousel-status" aria-live="polite">1 / 6</span>
-                <button class="carousel-button" type="button" aria-label="Next image">
-                →
-                </button>
-            </div>
-            <p class="carousel-caption" aria-live="polite">Final assembly</p>
-        </section>
+      <section class="project-carousel" aria-label="Project images">
+        <div class="carousel-stage">
+          <img class="carousel-preview carousel-preview-previous" alt="" aria-hidden="true">
+          <img class="carousel-preview carousel-preview-next" alt="" aria-hidden="true">
+          <img
+            class="carousel-image"
+            src="build.jpeg"
+            alt="Completed Moon Craters assembly"
+          >
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-button" type="button" aria-label="Previous image">←</button>
+          <span class="carousel-status" aria-live="polite"></span>
+          <button class="carousel-button" type="button" aria-label="Next image">→</button>
+        </div>
+        <p class="carousel-caption" aria-live="polite">Final assembly</p>
+      </section>
 
       <section aria-labelledby="results-heading">
         <h2 id="results-heading">Attributions</h2>
